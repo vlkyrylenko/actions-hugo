@@ -10,6 +10,10 @@ inputs:
     description: 'Download (if necessary) and use Hugo extended version. Example: true'
     required: false
     default: 'false'
+  withDeploy:
+    description: 'Select a version that deployment support enabled. Extended argument must be set to true. Example: true'
+    required: false
+    default: 'false'
 runs:
   using: 'node20'
   main: 'lib/index.js'
