@@ -44,10 +44,10 @@ export async function createBinDir(workDir: string): Promise<string> {
 }
 
 export async function installer(version: string): Promise<void> {
-  const extended: boolean = core.getInput('extended');
+  const extended: string = core.getInput('extended');
   core.debug(`Hugo extended: ${extended}`);
 
-  const withDeploy: boolean = core.getInput('withDeploy');
+  const withDeploy: string = core.getInput('withDeploy');
   core.debug(`Hugo withDeploy: ${withDeploy}`);
 
   const osName: string = getOS(process.platform);

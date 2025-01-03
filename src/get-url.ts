@@ -1,13 +1,13 @@
 export default function getURL(
   os: string,
   arch: string,
-  extended: boolean,
-  withdeploy: boolean,
+  extended: string,
+  withdeploy: string,
   version: string
 ): string {
 
-  const extendedStr = (extended: boolean): string => {
-    if (extended) {
+  const extendedStr = (extended: string): string => {
+    if (extended === 'true') {
       return 'extended_';
     } else {
       return '';
@@ -16,8 +16,8 @@ export default function getURL(
     }
   };
 
-  const deployStr = (deploy: boolean): string => {
-    if (deploy) {
+  const deployStr = (deploy: string): string => {
+    if (deploy === 'true') {
       return 'withdeploy_';
     } else {
       return '';
