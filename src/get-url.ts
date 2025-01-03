@@ -17,9 +17,10 @@ export default function getURL(
   };
 
   const deployStr = (deploy: string): string => {
-    if (deploy === 'true') {
+    if (deploy === 'true' && extended === 'true') {
       return 'withdeploy_';
-    } else {
+    }
+    else {
       return '';
       // } else {
       //   throw new Error(`Invalid input (extended): ${extended}`);
