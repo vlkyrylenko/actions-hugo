@@ -129,7 +129,7 @@ Set `extended: true` to use a Hugo extended version.
 
 ### ⭐️ Use Hugo extended with deployment support
 
-Set `withDeploy: true` to use a Hugo extended version with deployment enabled.
+Set `withDeploy: true` to use a Hugo extended version with deployment support enabled.
 
 ```yaml
 - name: Setup Hugo
