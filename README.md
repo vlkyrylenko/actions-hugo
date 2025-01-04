@@ -127,6 +127,20 @@ Set `extended: true` to use a Hugo extended version.
     extended: true
 ```
 
+### ⭐️ Use Hugo extended with deployment support
+
+Set `withDeploy: true` to use a Hugo extended version with deployment enabled.
+
+```yaml
+- name: Setup Hugo
+  uses: peaceiris/actions-hugo@v3
+  with:
+    hugo-version: '0.119.0'
+    extended: true
+    withDeploy: true
+```
+
+
 ### ⭐️ Use the latest version of Hugo
 
 Set `hugo-version: 'latest'` to use the latest version of Hugo.
